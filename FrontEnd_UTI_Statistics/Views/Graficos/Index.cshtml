@@ -1,0 +1,1939 @@
+﻿@model FrontEnd_UTI_Statistics.Models.Estadisticas.estadisticasModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="~/DataTablesTemplate/datatables.min.css" />
+    <!--datables estilo bootstrap 5 CSS-->
+    <link rel="stylesheet" type="text/css" href="~/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap5.min.css">
+
+    <!--font awesome con CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="col-xs-12">
+        <h1 style="color:#013440; font-family:sans-serif;">
+            Datos UTI 2019 - 2023
+        </h1>
+        <h6 style="color:#839192;font-family:sans-serif;">
+            Consulta y Análiza la Información.
+        </h6>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container-fluid" style="padding:20px 20px 20px 20px;">
+                    <form>
+                        <div class="accordion accordion-flush" id="accordionFlusheEstadist">
+                            @* TASA DE INGRESOS *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingtasIngresos">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetasIngresos" aria-expanded="false" aria-controls="flush-collapsetasIngresos">
+                                        TASA DE INGRESOS
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsetasIngresos" class="accordion-collapse collapse" aria-labelledby="flush-headingtasIngresos" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button class="btn btnCambiarCont" id="btnVerGraficoTasaIngresos" title="Ver Gráfico" type="button">Ver Gráfico</button>
+                                    </div>
+                                    <div class="table-responsive">                                     
+                                        <table id="tablaTasaIngresos" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>AÑO</th>
+                                                    <th>PROMEDIO MENSUAL</th>
+                                                    <th>INGRESOS</th>
+                                                    <th>PORCENTAJE</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2019</td>
+                                                    <td>@Model.promedioIngresos2019.ToString()</td>
+                                                    <td>@Model.contador2019.ToString()</td>
+                                                    <td>@Model.porcentajeIngresos2019.ToString("N2")</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2020</td>
+                                                    <td>@Model.promedioIngresos2020.ToString()</td>
+                                                    <td>@Model.contador2020.ToString()</td>
+                                                    <td>@Model.porcentajeIngresos2020.ToString("N2")</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2021</td>
+                                                    <td>@Model.promedioIngresos2021.ToString()</td>
+                                                    <td>@Model.contador2021.ToString()</td>
+                                                    <td>@Model.porcentajeIngresos2021.ToString("N2")</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2022</td>
+                                                    <td>@Model.promedioIngresos2022.ToString()</td>
+                                                    <td>@Model.contador2022.ToString()</td>
+                                                    <td>@Model.porcentajeIngresos2022.ToString("N2")</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2023</td>
+                                                    <td>@Model.promedioIngresos2023.ToString()</td>
+                                                    <td>@Model.contador2023.ToString()</td>
+                                                    <td>@Model.porcentajeIngresos2023.ToString("N2")</td>
+                                                </tr>                                             
+                                            </tbody>                                           
+                                        </table>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            @* SEXO *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSex">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSex" aria-expanded="false" aria-controls="flush-collapseSex">
+                                        SEXO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSex" class="accordion-collapse collapse" aria-labelledby="flush-headingSex" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaSexo" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>AÑO</th>
+                                                    <th>CANTIDAD VARONES</th>
+                                                    <th>CANTIDAD MUJERES</th>
+                                                    <th>PORCENTAJE VARONES</th>
+                                                    <th>PORCENTAJE MUJERES</th>
+                                                    <th>GRÁFICOS</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2019</td>
+                                                    <td>@Model.contadorSex2019m.ToString()</td>
+                                                    <td>@Model.contadorSex2019f.ToString()</td>
+                                                    <td>@Model.porcentaje2019m.ToString("N2")</td>
+                                                    <td>@Model.porcentaje2019f.ToString("N2")</td>
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexo2019" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2020</td>
+                                                    <td>@Model.contadorSex2020m.ToString()</td>
+                                                    <td>@Model.contadorSex2020f.ToString()</td>
+                                                    <td>@Model.porcentaje2020m.ToString("N2")</td>
+                                                    <td>@Model.porcentaje2020f.ToString("N2")</td>
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexo2020" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021</td>
+                                                    <td>@Model.contadorSex2021m.ToString()</td>
+                                                    <td>@Model.contadorSex2021f.ToString()</td>
+                                                    <td>@Model.porcentaje2021m.ToString("N2")</td>
+                                                    <td>@Model.porcentaje2021f.ToString("N2")</td>
+ 
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexo2021" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022</td>
+                                                    <td>@Model.contadorSex2022m.ToString()</td>
+                                                    <td>@Model.contadorSex2022f.ToString()</td>
+                                                    <td>@Model.porcentaje2022m.ToString("N2")</td>
+                                                    <td>@Model.porcentaje2022f.ToString("N2")</td>
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexo2022" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023</td>
+                                                    <td>@Model.contadorSex2023m.ToString()</td>
+                                                    <td>@Model.contadorSex2023f.ToString()</td>
+                                                    <td>@Model.porcentaje2023m.ToString("N2")</td>
+                                                    <td>@Model.porcentaje2023f.ToString("N2")</td>
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexo2023" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Global</td>
+                                                    <td>@Model.contadorSexMasTotal.ToString()</td>
+                                                    <td>@Model.contadorSexFemTotal.ToString()</td>
+                                                    <td>@Model.porcentajeallm.ToString("N2")</td>
+                                                    <td>@Model.porcentajeallf.ToString("N2")</td>
+                                                    <td>
+                                                        <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSexoGlobal" title="Gráfico">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* GRUPO ETARIO *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingGrupoEtario">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGrupoEtario" aria-expanded="false" aria-controls="flush-collapseGrupoEtario">
+                                        GRUPO ETARIO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseGrupoEtario" class="accordion-collapse collapse" aria-labelledby="flush-headingGrupoEtario" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaGrupoEtario" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>MODA</th>
+                                                <th>MEDIA</th>
+                                                <th>PROMEDIO DE EDAD</th>
+                                                <th>MENORES DE 30 AÑOS</th>
+                                                <th>ADULTOS DE 30 – 59 AÑOS</th>
+                                                <th>MAYORES DE 60 AÑOS</th>
+                                                <th>PORCENTAJE MENORES DE 30 AÑOS</th>
+                                                <th>PORCENTAJE ADULTOS DE 30 – 59 AÑOS</th>
+                                                <th>PORCENTAJE MAYORES DE 60 AÑOS</th>
+
+                                                <th>GRÁFICO GRUPO ETARIO</th>
+                                                
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.media2019Edad.ToString("N2")</td>
+                                                <td>@Model.moda2019Edad.ToString("N2")</td>
+                                                <td>@Model.promedi2019Edad.ToString("N2")</td>
+                                                <td>@Model.Menores30anos2019.ToString()</td> 
+                                                <td>@Model.Adultos30_59anos2019.ToString()</td>
+                                                <td>@Model.Mayoresde60anos2019.ToString()</td>
+                                                <td>@Model.porcentajeMenores30anos2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeAdultos30_59anos2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeMayoresde60anos2019.ToString("N2")</td>
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoEdad2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.media2020Edad.ToString("N2")</td>
+                                                <td>@Model.moda2020Edad.ToString("N2")</td>
+                                                <td>@Model.promedi2020Edad.ToString("N2")</td>
+                                                <td>@Model.Menores30anos2020.ToString()</td>
+                                                <td>@Model.Adultos30_59anos2020.ToString()</td>
+                                                <td>@Model.Mayoresde60anos2020.ToString()</td>
+                                                <td>@Model.porcentajeMenores30anos2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeAdultos30_59anos2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeMayoresde60anos2020.ToString("N2")</td>
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoEdad2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.media2021Edad.ToString("N2")</td>
+                                                <td>@Model.moda2021Edad.ToString("N2")</td>
+                                                <td>@Model.promedi2021Edad.ToString("N2")</td>
+                                                <td>@Model.Menores30anos2021.ToString()</td>
+                                                <td>@Model.Adultos30_59anos2021.ToString()</td>
+                                                <td>@Model.Mayoresde60anos2021.ToString()</td>
+                                                <td>@Model.porcentajeMenores30anos2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeAdultos30_59anos2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeMayoresde60anos2021.ToString("N2")</td>
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoEdad2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.media2022Edad.ToString("N2")</td>
+                                                <td>@Model.moda2022Edad.ToString("N2")</td>
+                                                <td>@Model.promedi2022Edad.ToString("N2")</td>
+                                                <td>@Model.Menores30anos2022.ToString()</td>
+                                                <td>@Model.Adultos30_59anos2022.ToString()</td>
+                                                <td>@Model.Mayoresde60anos2022.ToString()</td>
+                                                <td>@Model.porcentajeMenores30anos2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeAdultos30_59anos2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeMayoresde60anos2022.ToString("N2")</td>
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoEdad2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                          
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.media2023Edad.ToString("N2")</td>
+                                                <td>@Model.moda2023Edad.ToString("N2")</td>
+                                                <td>@Model.promedi2023Edad.ToString("N2")</td>
+                                                <td>@Model.Menores30anos2023.ToString()</td>
+                                                <td>@Model.Adultos30_59anos2023.ToString()</td>
+                                                <td>@Model.Mayoresde60anos2023.ToString()</td>
+                                                <td>@Model.porcentajeMenores30anos2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeAdultos30_59anos2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeMayoresde60anos2023.ToString("N2")</td>
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoEdad2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                      
+                                    </table>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button class="btn btnCambiarCont" id="verGraficoEdadGlobal" title="Ver Gráfico" type="button">Ver Gráfico Global</button>
+                                    </div>
+                                </div>
+                            </div>
+                            @* ESTANCIA EN UTI *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEstUti">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEstUti" aria-expanded="false" aria-controls="flush-collapseEstUti">
+                                        ESTANCIA EN UTI
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEstUti" class="accordion-collapse collapse" aria-labelledby="flush-headingEstUti" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaEstDias" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>AÑO</th>
+                                                    <th>MODA</th>
+                                                    <th>MEDIA</th>
+                                                    <th>PROMEDIO DE DIAS ESTANCIA</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2019</td>
+                                                    <td>@Model.moda2019EstDias.ToString("N2")</td>
+                                                    <td>@Model.media2019EstDias.ToString("N2")</td>
+                                                    <td>@Model.promedi2019EstDias.ToString("N2")</td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>2020</td>
+                                                    <td>@Model.moda2020EstDias.ToString("N2")</td>
+                                                    <td>@Model.media2020EstDias.ToString("N2")</td>
+                                                    <td>@Model.promedi2020EstDias.ToString("N2")</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021</td>
+                                                    <td>@Model.moda2021EstDias.ToString("N2")</td>
+                                                    <td>@Model.media2021EstDias.ToString("N2")</td>
+                                                    <td>@Model.promedi2021EstDias.ToString("N2")</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022</td>
+                                                    <td>@Model.moda2022EstDias.ToString("N2")</td>
+                                                    <td>@Model.media2022EstDias.ToString("N2")</td>
+                                                    <td>@Model.promedi2022EstDias.ToString("N2")</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2023</td>
+                                                    <td>@Model.moda2023EstDias.ToString("N2")</td>
+                                                    <td>@Model.media2023EstDias.ToString("N2")</td>
+                                                    <td>@Model.promedi2023EstDias.ToString("N2")</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* SERVICIOS DE ORIGEN DE INGRESO *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOrigenIngreso">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOrigenIngreso" aria-expanded="false" aria-controls="flush-collapseOrigenIngreso">
+                                        SERVICIOS DE ORIGEN DE INGRESO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOrigenIngreso" class="accordion-collapse collapse" aria-labelledby="flush-headingOrigenIngreso" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaOrigenIngreso" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>EMERGENCIAS</th>
+                                                <th>QUIRÓFANO</th>
+                                                <th>SALA COMÚN</th>
+                                                <th>TRANSFERENCIA DE OTRA UTI</th>
+                                                <th>OTROS</th>
+                                                <th>PORCENTAJE EMERGENCIAS</th>
+                                                <th>PORCENTAJE QUIRÓFANO</th>
+                                                <th>PORCENTAJE SALA COMÚN</th>
+                                                <th>PORCENTAJE TRANSFERENCIA DE OTRA UTI</th>
+                                                <th>PORCENTAJE OTROS</th>
+                                                <th>GRÁFICO ORIGEN DE INGRESO</th>
+                                                
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.oicontEmergencias2019.ToString()</td>
+                                                <td>@Model.oicontQuirofano2019.ToString()</td>
+                                                <td>@Model.oicontSalacomun2019.ToString()</td>
+                                                <td>@Model.oicontTransferenciadeotraUTI2019.ToString()</td>
+                                                <td>@Model.oicontOtros2019.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI2019.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros2019.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngre2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.oicontEmergencias2020.ToString()</td>
+                                                <td>@Model.oicontQuirofano2020.ToString()</td>
+                                                <td>@Model.oicontSalacomun2020.ToString()</td>
+                                                <td>@Model.oicontTransferenciadeotraUTI2020.ToString()</td>
+                                                <td>@Model.oicontOtros2020.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI2020.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros2020.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngre2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.oicontEmergencias2021.ToString()</td>
+                                                <td>@Model.oicontQuirofano2021.ToString()</td>
+                                                <td>@Model.oicontSalacomun2021.ToString()</td>
+                                                <td>@Model.oicontTransferenciadeotraUTI2021.ToString()</td>
+                                                <td>@Model.oicontOtros2021.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI2021.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros2021.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngre2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.oicontEmergencias2022.ToString()</td>
+                                                <td>@Model.oicontQuirofano2022.ToString()</td>
+                                                <td>@Model.oicontSalacomun2022.ToString()</td>
+                                                <td>@Model.oicontTransferenciadeotraUTI2022.ToString()</td>
+                                                <td>@Model.oicontOtros2022.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI2022.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros2022.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngre2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.oicontEmergencias2023.ToString()</td>
+                                                <td>@Model.oicontQuirofano2023.ToString()</td>
+                                                <td>@Model.oicontSalacomun2023.ToString()</td>
+                                                <td>@Model.oicontTransferenciadeotraUTI2023.ToString()</td>
+                                                <td>@Model.oicontOtros2023.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI2023.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros2023.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngre2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.totalGlobalEmergencias.ToString()</td>
+                                                <td>@Model.totalGlobalQuirofano.ToString()</td>
+                                                <td>@Model.totalGlobalSalaComun.ToString()</td>
+                                                <td>@Model.totalGlobalTransferenciaOtraUTI.ToString()</td>
+                                                <td>@Model.totalGlobalOtros.ToString()</td>
+
+                                                <td>@Model.porcentajeEmergencias.ToString("N2")</td>
+                                                <td>@Model.porcentajeQuirofano.ToString("N2")</td>
+                                                <td>@Model.porcentajeSalaComun.ToString("N2")</td>
+                                                <td>@Model.porcentajeTransferenciaOtraUTI.ToString("N2")</td>
+                                                <td>@Model.porcentajeOtros.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoOriIngreGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* SERVICIOS DE EGRESO Y TASA BRUTA DE MORTALIDAD *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingServEgreTb">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseServEgreTb" aria-expanded="false" aria-controls="flush-collapseServEgreTb">
+                                        SERVICIOS DE EGRESO Y TASA BRUTA DE MORTALIDAD
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseServEgreTb" class="accordion-collapse collapse" aria-labelledby="flush-headingServEgreTb" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaServEgreTb" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>SALA COMÚN</th>
+                                                <th>TERAPIA INTERMEDIA</th>
+                                                <th>ALTA HOSPITALARIA</th>
+                                                <th>FALLECE</th>                                               
+
+                                                <th>PORCENTAJE SALA COMÚN</th>
+                                                <th>PORCENTAJE TERAPIA INTERMEDIA</th>
+                                                <th>PORCENTAJE ALTA HOSPITALARIA</th>
+                                                <th>PORCENTAJE FALLECE</th>
+                                                <th>GRÁFICO SERVICIO DE EGRESO</th>
+                                              
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.secontSalacomun2019.ToString()</td>
+                                                <td>@Model.secontTerapia_intermedia2019.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalaria2019.ToString()</td>
+                                                <td>@Model.secontFallece2019.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomun2019.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermedia2019.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalaria2019.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFallece2019.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgre2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.secontSalacomun2020.ToString()</td>
+                                                <td>@Model.secontTerapia_intermedia2020.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalaria2020.ToString()</td>
+                                                <td>@Model.secontFallece2020.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomun2020.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermedia2020.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalaria2020.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFallece2020.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgre2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.secontSalacomun2021.ToString()</td>
+                                                <td>@Model.secontTerapia_intermedia2021.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalaria2021.ToString()</td>
+                                                <td>@Model.secontFallece2021.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomun2021.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermedia2021.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalaria2021.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFallece2021.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgre2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.secontSalacomun2022.ToString()</td>
+                                                <td>@Model.secontTerapia_intermedia2022.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalaria2022.ToString()</td>
+                                                <td>@Model.secontFallece2022.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomun2022.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermedia2022.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalaria2022.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFallece2022.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgre2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.secontSalacomun2023.ToString()</td>
+                                                <td>@Model.secontTerapia_intermedia2023.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalaria2023.ToString()</td>
+                                                <td>@Model.secontFallece2023.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomun2023.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermedia2023.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalaria2023.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFallece2023.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgre2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.secontSalacomunGlobal.ToString()</td>
+                                                <td>@Model.secontTerapia_intermediaGlobal.ToString()</td>
+                                                <td>@Model.secontAlta_hospitalariaGlobal.ToString()</td>
+                                                <td>@Model.secontFalleceGlobal.ToString()</td>
+
+                                                <td>@Model.seporcentajeSalacomunGlobal.ToString("N2")</td>
+                                                <td>@Model.seporcentajeTerapia_intermediaGlobal.ToString("N2")</td>
+                                                <td>@Model.seporcentajeAlta_hospitalariaGlobal.ToString("N2")</td>
+                                                <td>@Model.seporcentajeFalleceGlobal.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoServEgreGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* PREVALENCIA DE CAUSA DE MORTALIDAD BRUTA *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingCausaMortalidad">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCausaMortalidad" aria-expanded="false" aria-controls="flush-collapseCausaMortalidad">
+                                        PREVALENCIA DE CAUSA DE MORTALIDAD BRUTA
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseCausaMortalidad" class="accordion-collapse collapse" aria-labelledby="flush-headingCausaMortalidad" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaCausaMortalidad" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>NEUROLÓGICO</th>
+                                                <th>RESPIRATORIO</th>
+                                                <th>CARDIOVASCULAR</th>
+                                                <th>GASTROINTESTINAL</th>
+                                                <th>RENAL-ENDOCRINOLÓGICO</th>
+                                                <th>FALLA MULTIORGANICA</th>
+                                                <th>OTROS</th>
+
+                                                <th>PORCENTAJE NEUROLÓGICO</th>
+                                                <th>PORCENTAJE RESPIRATORIO</th>
+                                                <th>PORCENTAJE CARDIOVASCULAR</th>
+                                                <th>PORCENTAJE GASTROINTESTINAL</th>
+                                                <th>PORCENTAJE RENAL-ENDOCRINOLÓGICO</th>
+                                                <th>PORCENTAJE FALLA MULTIORGANICA</th>
+                                                <th>PORCENTAJE OTROS</th>
+                                                <th>PORCENTAJE NO FALLECIDOS</th>
+                                                <th>GRÁFICO CAUSA DE MORTALIDAD</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.cmNeurologico2019.ToString()</td>
+                                                <td>@Model.cmRespiratorio2019.ToString()</td>
+                                                <td>@Model.cmCardiovascular2019.ToString()</td>
+                                                <td>@Model.cmGastrointestinal2019.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologico2019.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganica2019.ToString()</td>
+                                                <td>@Model.cmOtros2019.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicos2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorio2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascular2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinal2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologico2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganica2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtros2019.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidos2019.ToString("N2")</td>
+                                               
+                                                
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidad2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.cmNeurologico2020.ToString()</td>
+                                                <td>@Model.cmRespiratorio2020.ToString()</td>
+                                                <td>@Model.cmCardiovascular2020.ToString()</td>
+                                                <td>@Model.cmGastrointestinal2020.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologico2020.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganica2020.ToString()</td>
+                                                <td>@Model.cmOtros2020.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicos2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorio2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascular2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinal2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologico2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganica2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtros2020.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidos2020.ToString("N2")</td>
+
+
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidad2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.cmNeurologico2021.ToString()</td>
+                                                <td>@Model.cmRespiratorio2021.ToString()</td>
+                                                <td>@Model.cmCardiovascular2021.ToString()</td>
+                                                <td>@Model.cmGastrointestinal2021.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologico2021.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganica2021.ToString()</td>
+                                                <td>@Model.cmOtros2021.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicos2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorio2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascular2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinal2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologico2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganica2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtros2021.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidos2021.ToString("N2")</td>
+
+
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidad2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.cmNeurologico2022.ToString()</td>
+                                                <td>@Model.cmRespiratorio2022.ToString()</td>
+                                                <td>@Model.cmCardiovascular2022.ToString()</td>
+                                                <td>@Model.cmGastrointestinal2022.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologico2022.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganica2022.ToString()</td>
+                                                <td>@Model.cmOtros2022.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicos2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorio2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascular2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinal2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologico2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganica2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtros2022.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidos2022.ToString("N2")</td>
+
+
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidad2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.cmNeurologico2023.ToString()</td>
+                                                <td>@Model.cmRespiratorio2023.ToString()</td>
+                                                <td>@Model.cmCardiovascular2023.ToString()</td>
+                                                <td>@Model.cmGastrointestinal2023.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologico2023.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganica2023.ToString()</td>
+                                                <td>@Model.cmOtros2023.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicos2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorio2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascular2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinal2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologico2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganica2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtros2023.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidos2023.ToString("N2")</td>
+
+
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidad2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.cmNeurologicoGlobal.ToString()</td>
+                                                <td>@Model.cmRespiratorioGlobal.ToString()</td>
+                                                <td>@Model.cmCardiovascularGlobal.ToString()</td>
+                                                <td>@Model.cmGastrointestinalGlobal.ToString()</td>
+                                                <td>@Model.cmRenalEndocrinologicoGlobal.ToString()</td>
+                                                <td>@Model.cmFallaMultiorganicaGlobal.ToString()</td>
+                                                <td>@Model.cmOtrosGlobal.ToString()</td>
+
+                                                <td>@Model.cmporcentajeNeurologicosGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeRespiratorioGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeCardiovascularGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeGastrointestinalGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeEndocrinologicoGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeFallaMultiorganicaGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeOtrosGlobal.ToString("N2")</td>
+                                                <td>@Model.cmporcentajeNoFallecidosGlobal.ToString("N2")</td>
+
+
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaMortalidadGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            
+                                           
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* PREVALENCIA DE PATOLOGIAS DE CAUSA DE INGRESO *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingCausaIngreso">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCausaIngreso" aria-expanded="false" aria-controls="flush-collapseCausaIngreso">
+                                        PREVALENCIA DE PATOLOGIAS DE CAUSA DE INGRESO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseCausaIngreso" class="accordion-collapse collapse" aria-labelledby="flush-headingCausaIngreso" data-bs-parent="#accordionFlusheEstadist">
+                                    <div class="table-responsive">
+                                        <table id="tablaCausaIngreso" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>NEUROLÓGICO</th>
+                                                <th>RESPIRATORIO</th>
+                                                <th>CARDIOVASCULAR</th>
+                                                <th>GASTROINTESTINAL</th>
+                                                <th>RENAL-ENDOCRINOLÓGICO</th>
+                                                <th>OTROS</th>
+
+                                                <th>PORCENTAJE NEUROLÓGICO</th>
+                                                <th>PORCENTAJE RESPIRATORIO</th>
+                                                <th>PORCENTAJE CARDIOVASCULAR</th>
+                                                <th>PORCENTAJE GASTROINTESTINAL</th>
+                                                <th>PORCENTAJE RENAL-ENDOCRINOLÓGICO</th>
+                                                <th>PORCENTAJE OTROS</th>
+                                                <th>GRÁFICO CAUSA DE INGRESO</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.cicontNeurologico2019.ToString()</td>
+                                                <td>@Model.cicontRespiratorio2019.ToString()</td>
+                                                <td>@Model.cicontCardiovascular2019.ToString()</td>
+                                                <td>@Model.cicontGastrointestinal2019.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologico2019.ToString()</td>
+                                                <td>@Model.cicontOtros2019.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologico2019.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorio2019.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascular2019.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinal2019.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologico2019.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtros2019.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngreso2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.cicontNeurologico2020.ToString()</td>
+                                                <td>@Model.cicontRespiratorio2020.ToString()</td>
+                                                <td>@Model.cicontCardiovascular2020.ToString()</td>
+                                                <td>@Model.cicontGastrointestinal2020.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologico2020.ToString()</td>
+                                                <td>@Model.cicontOtros2020.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologico2020.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorio2020.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascular2020.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinal2020.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologico2020.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtros2020.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngreso2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.cicontNeurologico2021.ToString()</td>
+                                                <td>@Model.cicontRespiratorio2021.ToString()</td>
+                                                <td>@Model.cicontCardiovascular2021.ToString()</td>
+                                                <td>@Model.cicontGastrointestinal2021.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologico2021.ToString()</td>
+                                                <td>@Model.cicontOtros2021.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologico2021.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorio2021.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascular2021.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinal2021.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologico2021.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtros2021.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngreso2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.cicontNeurologico2022.ToString()</td>
+                                                <td>@Model.cicontRespiratorio2022.ToString()</td>
+                                                <td>@Model.cicontCardiovascular2022.ToString()</td>
+                                                <td>@Model.cicontGastrointestinal2022.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologico2022.ToString()</td>
+                                                <td>@Model.cicontOtros2022.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologico2022.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorio2022.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascular2022.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinal2022.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologico2022.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtros2022.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngreso2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.cicontNeurologico2023.ToString()</td>
+                                                <td>@Model.cicontRespiratorio2023.ToString()</td>
+                                                <td>@Model.cicontCardiovascular2023.ToString()</td>
+                                                <td>@Model.cicontGastrointestinal2023.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologico2023.ToString()</td>
+                                                <td>@Model.cicontOtros2023.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologico2023.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorio2023.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascular2023.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinal2023.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologico2023.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtros2023.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngreso2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.cicontNeurologicoTotal.ToString()</td>
+                                                <td>@Model.cicontRespiratorioTotal.ToString()</td>
+                                                <td>@Model.cicontCardiovascularTotal.ToString()</td>
+                                                <td>@Model.cicontGastrointestinalTotal.ToString()</td>
+                                                <td>@Model.cicontRenalEndocrinologicoTotal.ToString()</td>
+                                                <td>@Model.cicontOtrosTotal.ToString()</td>
+
+                                                <td>@Model.ciporcentajecicontNeurologicoTotal.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRespiratorioTotal.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontCardiovascularTotal.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontGastrointestinalTotal.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontRenalEndocrinologicoTotal.ToString("N2")</td>
+                                                <td>@Model.ciporcentajecicontOtrosTotal.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoCausaIngresoGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            @* SUBCATEGORIAS DE CAUSA DE INGRESO *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSubCausaIngreso">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSubCausaIngreso" aria-expanded="false" aria-controls="flush-collapseSubCausaIngreso">
+                                        SUBCATEGORIAS DE CAUSA DE INGRESO
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSubCausaIngreso" class="accordion-collapse collapse" aria-labelledby="flush-headingSubCausaIngreso" data-bs-parent="#accordionFlusheEstadist">
+                                    @* Neurológico *@
+                                    <div class="mb-3">
+                                        <div class="separadores">NEUROLÓGICO</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table id="tablaSubCausaIngresoNeurologico" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>TEC</th>
+                                                <th>AVC</th>
+                                                <th>EPILEPSIA</th>
+                                                <th>MENINGITIS</th>
+                                                <th>OTROS</th>
+
+                                                <th>PORCENTAJE TEC</th>
+                                                <th>PORCENTAJE AVC</th>
+                                                <th>PORCENTAJE EPILEPSIA</th>
+                                                <th>PORCENTAJE MENINGITIS</th>
+                                                <th>PORCENTAJE OTROS</th>
+                                                
+                                                <th>GRÁFICO SUB CAUSA DE INGRESO</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.subNcicontTEC2019.ToString()</td>
+                                                <td>@Model.subNcicontAVC2019.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsia2019.ToString()</td>
+                                                <td>@Model.subNcicontMeningitis2019.ToString()</td>
+                                                <td>@Model.subNcicontOtros2019.ToString()</td>
+
+                                                <td>@Model.porcentajesubNcicontTEC2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontAVC2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontEpilepsia2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontMeningitis2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontOtros2019.ToString("N2")</td>
+                                               
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngreso2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.subNcicontTEC2020.ToString()</td>
+                                                <td>@Model.subNcicontAVC2020.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsia2020.ToString()</td>
+                                                <td>@Model.subNcicontMeningitis2020.ToString()</td>
+                                                <td>@Model.subNcicontOtros2020.ToString()</td>
+
+                                                <td>@Model.porcentajesubNcicontTEC2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontAVC2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontEpilepsia2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontMeningitis2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontOtros2020.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngreso2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.subNcicontTEC2021.ToString()</td>
+                                                <td>@Model.subNcicontAVC2021.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsia2021.ToString()</td>
+                                                <td>@Model.subNcicontMeningitis2021.ToString()</td>
+                                                <td>@Model.subNcicontOtros2021.ToString()</td>
+
+                                                <td>@Model.porcentajesubNcicontTEC2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontAVC2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontEpilepsia2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontMeningitis2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontOtros2021.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngreso2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.subNcicontTEC2022.ToString()</td>
+                                                <td>@Model.subNcicontAVC2022.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsia2022.ToString()</td>
+                                                <td>@Model.subNcicontMeningitis2022.ToString()</td>
+                                                <td>@Model.subNcicontOtros2022.ToString()</td>
+
+                                                <td>@Model.porcentajesubNcicontTEC2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontAVC2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontEpilepsia2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontMeningitis2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontOtros2022.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngreso2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.subNcicontTEC2023.ToString()</td>
+                                                <td>@Model.subNcicontAVC2023.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsia2023.ToString()</td>
+                                                <td>@Model.subNcicontMeningitis2023.ToString()</td>
+                                                <td>@Model.subNcicontOtros2023.ToString()</td>
+
+                                                <td>@Model.porcentajesubNcicontTEC2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontAVC2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontEpilepsia2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontMeningitis2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubNcicontOtros2023.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngreso2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.subNcicontTECTotal.ToString()</td>
+                                                <td>@Model.subNcicontAVCTotal.ToString()</td>
+                                                <td>@Model.subNcicontEpilepsiaTotal.ToString()</td>
+                                                <td>@Model.subNcicontMeningitisTotal.ToString()</td>
+                                                <td>@Model.subNcicontOtrosTotal.ToString()</td>
+
+                                                <td>@Model.subporcentajesubNcicontTECTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubNcicontAVCTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubNcicontEpilepsiaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubNcicontMeningitisTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubNcicontOtrosTotal.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubNeuroCausaIngresoGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                          
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    @* Respiratorio *@
+                                    <div class="mb-3">
+                                        <div class="separadores">RESPIRATORIO</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table id="tablaSubCausaIngresoRespiratorio" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>CHOQUE SÉPTICO- NEUMONÍA</th>
+                                                <th>TEP</th>
+                                                <th>EAP</th>
+                                                <th>ASMA, EPOC</th>
+                                                <th>OTROS</th>
+
+                                                <th>PORCENTAJE CHOQUE SÉPTICO- NEUMONÍA</th>
+                                                <th>PORCENTAJE TEP</th>
+                                                <th>PORCENTAJE EAP</th>
+                                                <th>PORCENTAJE ASMA, EPOC</th>
+                                                <th>PORCENTAJE OTROS</th>
+
+                                                <th>GRÁFICO SUB CAUSA DE INGRESO</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.subResciChoqueSeptico_Neumonia2019.ToString()</td>
+                                                <td>@Model.subResciTEP2019.ToString()</td>
+                                                <td>@Model.subResciEAP2019.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOC2019.ToString()</td>
+                                                <td>@Model.subResciOtros2019.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubResciChoqueSeptico_Neumonia2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciTEP2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciEAP2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciAsma_EPOC2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciOtros2019.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngreso2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.subResciChoqueSeptico_Neumonia2020.ToString()</td>
+                                                <td>@Model.subResciTEP2020.ToString()</td>
+                                                <td>@Model.subResciEAP2020.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOC2020.ToString()</td>
+                                                <td>@Model.subResciOtros2020.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubResciChoqueSeptico_Neumonia2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciTEP2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciEAP2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciAsma_EPOC2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciOtros2020.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngreso2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.subResciChoqueSeptico_Neumonia2021.ToString()</td>
+                                                <td>@Model.subResciTEP2021.ToString()</td>
+                                                <td>@Model.subResciEAP2021.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOC2021.ToString()</td>
+                                                <td>@Model.subResciOtros2021.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubResciChoqueSeptico_Neumonia2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciTEP2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciEAP2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciAsma_EPOC2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciOtros2021.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngreso2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.subResciChoqueSeptico_Neumonia2022.ToString()</td>
+                                                <td>@Model.subResciTEP2022.ToString()</td>
+                                                <td>@Model.subResciEAP2022.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOC2022.ToString()</td>
+                                                <td>@Model.subResciOtros2022.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubResciChoqueSeptico_Neumonia2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciTEP2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciEAP2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciAsma_EPOC2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciOtros2022.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngreso2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.subResciChoqueSeptico_Neumonia2023.ToString()</td>
+                                                <td>@Model.subResciTEP2023.ToString()</td>
+                                                <td>@Model.subResciEAP2023.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOC2023.ToString()</td>
+                                                <td>@Model.subResciOtros2023.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubResciChoqueSeptico_Neumonia2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciTEP2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciEAP2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciAsma_EPOC2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubResciOtros2023.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngreso2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.subResciChoqueSeptico_NeumoniaTotal.ToString()</td>
+                                                <td>@Model.subResciTEPTotal.ToString()</td>
+                                                <td>@Model.subResciEAPTotal.ToString()</td>
+                                                <td>@Model.subResciAsma_EPOCTotal.ToString()</td>
+                                                <td>@Model.subResciOtrosTotal.ToString()</td>
+
+
+                                                <td>@Model.subporcentajesubResciChoqueSeptico_NeumoniaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubResciTEPTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubResciEAPTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubResciAsma_EPOCTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubResciOtrosTotal.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubRespCausaIngresoGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    @* Cardiovascular *@
+                                    <div class="mb-3">
+                                        <div class="separadores">CARDIOVASCULAR </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table id="tablaSubCausaIngresoCardiovascular" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>CHOQUE CARDIOGÉNICO</th>
+                                                <th>POST OPERADO CIRUGÍA CARDIACA</th>
+                                                <th>TAQUIARRITMIA - BRADIARRITMIA</th>
+                                                <th>CRISIS HIPERTENSIVAS</th>
+                                                <th>POST PARO</th>
+                                                <th>OTROS</th>
+
+
+                                                <th>PORCENTAJE CHOQUE CARDIOGÉNICO</th>
+                                                <th>PORCENTAJE POST OPERADO CIRUGÍA CARDIACA</th>
+                                                <th>PORCENTAJE TAQUIARRITMIA - BRADIARRITMIA</th>
+                                                <th>PORCENTAJE CRISIS HIPERTENSIVAS</th>
+                                                <th>PORCENTAJE POST PARO</th>
+                                                <th>PORCENTAJE OTROS</th>
+
+                                                <th>GRÁFICO SUB CAUSA DE INGRESO</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.subCarciChoqueCardiogenico2019.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiaca2019.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmia2019.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivas2019.ToString()</td>
+                                                <td>@Model.subCarciPostParo2019.ToString()</td>
+                                                <td>@Model.subCarciOtros2019.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubCarciChoqueCardiogenico2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostOperadoCirugiaCardiaca2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciTaquiarritmiaBradiarritmia2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciCrisisHipertensivas2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostParo2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciOtros2019.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngreso2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.subCarciChoqueCardiogenico2020.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiaca2020.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmia2020.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivas2020.ToString()</td>
+                                                <td>@Model.subCarciPostParo2020.ToString()</td>
+                                                <td>@Model.subCarciOtros2020.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubCarciChoqueCardiogenico2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostOperadoCirugiaCardiaca2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciTaquiarritmiaBradiarritmia2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciCrisisHipertensivas2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostParo2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciOtros2020.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngreso2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.subCarciChoqueCardiogenico2021.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiaca2021.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmia2021.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivas2021.ToString()</td>
+                                                <td>@Model.subCarciPostParo2021.ToString()</td>
+                                                <td>@Model.subCarciOtros2021.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubCarciChoqueCardiogenico2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostOperadoCirugiaCardiaca2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciTaquiarritmiaBradiarritmia2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciCrisisHipertensivas2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostParo2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciOtros2021.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngreso2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.subCarciChoqueCardiogenico2022.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiaca2022.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmia2022.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivas2022.ToString()</td>
+                                                <td>@Model.subCarciPostParo2022.ToString()</td>
+                                                <td>@Model.subCarciOtros2022.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubCarciChoqueCardiogenico2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostOperadoCirugiaCardiaca2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciTaquiarritmiaBradiarritmia2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciCrisisHipertensivas2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostParo2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciOtros2022.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngreso2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.subCarciChoqueCardiogenico2023.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiaca2023.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmia2023.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivas2023.ToString()</td>
+                                                <td>@Model.subCarciPostParo2023.ToString()</td>
+                                                <td>@Model.subCarciOtros2023.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubCarciChoqueCardiogenico2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostOperadoCirugiaCardiaca2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciTaquiarritmiaBradiarritmia2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciCrisisHipertensivas2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciPostParo2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubCarciOtros2023.ToString("N2")</td>
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngreso2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.subCarciChoqueCardiogenicoTotal.ToString()</td>
+                                                <td>@Model.subCarciPostOperadoCirugiaCardiacaTotal.ToString()</td>
+                                                <td>@Model.subCarciTaquiarritmiaBradiarritmiaTotal.ToString()</td>
+                                                <td>@Model.subCarciCrisisHipertensivasTotal.ToString()</td>
+                                                <td>@Model.subCarciPostParoTotal.ToString()</td>
+                                                <td>@Model.subCarciOtrosTotal.ToString()</td>
+
+
+                                                <td>@Model.subporcentajesubCarciChoqueCardiogenicoTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubCarciPostOperadoCirugiaCardiacaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubCarciTaquiarritmiaBradiarritmiaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubCarciCrisisHipertensivasTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubCarciPostParoTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubCarciOtrosTotal.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubCardioCausaIngresoGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    @* Gastrointestinal *@
+                                    <div class="mb-3">
+                                        <div class="separadores">GASTROINTESTINAL  </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table id="tablaSubCausaIngresoGastrointestinal" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>AÑO</th>
+                                                <th>PANCREATITIS AGUDA</th>
+                                                <th>HEMORRAGIA DIGESTIVA</th>
+                                                <th>POST OPERADOS COMPLICADOS</th>
+                                                <th>OTROS</th>
+
+
+                                                <th>PORCENTAJE PANCREATITIS AGUDA</th>
+                                                <th>PORCENTAJE HEMORRAGIA DIGESTIVA</th>
+                                                <th>PORCENTAJE POST OPERADOS COMPLICADOS</th>
+                                                <th>PORCENTAJE OTROS</th>
+
+                                                <th>GRÁFICO SUB CAUSA DE INGRESO</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td>@Model.subGasciPancreatitisAguda2019.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestiva2019.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicados2019.ToString()</td>
+                                                <td>@Model.subGasciOtros2019.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubGasciPancreatitisAguda2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciHemorragiaDigestiva2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciPostOperadosComplicados2019.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciOtros2019.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngreso2019" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2020</td>
+                                                <td>@Model.subGasciPancreatitisAguda2020.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestiva2020.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicados2020.ToString()</td>
+                                                <td>@Model.subGasciOtros2020.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubGasciPancreatitisAguda2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciHemorragiaDigestiva2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciPostOperadosComplicados2020.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciOtros2020.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngreso2020" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2021</td>
+                                                <td>@Model.subGasciPancreatitisAguda2021.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestiva2021.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicados2021.ToString()</td>
+                                                <td>@Model.subGasciOtros2021.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubGasciPancreatitisAguda2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciHemorragiaDigestiva2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciPostOperadosComplicados2021.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciOtros2021.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngreso2021" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>@Model.subGasciPancreatitisAguda2022.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestiva2022.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicados2022.ToString()</td>
+                                                <td>@Model.subGasciOtros2022.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubGasciPancreatitisAguda2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciHemorragiaDigestiva2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciPostOperadosComplicados2022.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciOtros2022.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngreso2022" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2023</td>
+                                                <td>@Model.subGasciPancreatitisAguda2023.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestiva2023.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicados2023.ToString()</td>
+                                                <td>@Model.subGasciOtros2023.ToString()</td>
+
+
+                                                <td>@Model.porcentajesubGasciPancreatitisAguda2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciHemorragiaDigestiva2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciPostOperadosComplicados2023.ToString("N2")</td>
+                                                <td>@Model.porcentajesubGasciOtros2023.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngreso2023" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Global</td>
+                                                <td>@Model.subGasciPancreatitisAgudaTotal.ToString()</td>
+                                                <td>@Model.subGasciHemorragiaDigestivaTotal.ToString()</td>
+                                                <td>@Model.subGasciPostOperadosComplicadosTotal.ToString()</td>
+                                                <td>@Model.subGasciOtrosTotal.ToString()</td>
+
+
+                                                <td>@Model.subporcentajesubGasciPancreatitisAgudaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubsubGasciHemorragiaDigestivaTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubGasciPostOperadosComplicadosTotal.ToString("N2")</td>
+                                                <td>@Model.subporcentajesubGasciOtrosTotal.ToString("N2")</td>
+
+
+                                                <td>
+                                                    <button class="btn" style="background-color:#004c46;" type="button" id="verGraficoSubGastroCausaIngresoGlobal" title="Gráfico">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2F2F2" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015" />
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .btnCambiarCont {
+        background-color: #004c46;
+        color: #F2E9E4;
+        font-family: sans-serif !important;
+    }
+
+    .labelFormularios {
+        font-family: sans-serif;
+        color: #004c46;
+    }
+
+    .separadores {
+        background-color: #004c46;
+        font-family: sans-serif;
+        color: #F2E9E4;
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        padding: 15px 15px 15px 15px !important;
+    }
+    /*estilos para la tabla*/
+    table th {
+        background-color: #004c46 !important;
+        color: #F2E9E4;
+        font-family: sans-serif;
+    }
+
+    table > tbody > tr > td {
+        vertical-align: middle !important;
+        font-family: sans-serif;
+        color: #013440 !important
+    }
+
+    /*para alinear los botones y cuadro de busqueda*/
+    .btn-group, .btn-group-vertical {
+        position: absolute !important;
+    }
+</style>
+<div class="card">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+            <div id="miObjeto" data-mi-objeto="@ViewBag.MiObjetoJson"></div>
+
+            <div class="text-center">
+                @* <div class="btn-group" role="group" aria-label="">
+                    <button id="btnColumnas" type="button" class="btn btn-secondary">Columnas</button>
+                    <button id="btnLineas" type="button" class="btn btn-primary">Líneas</button>
+                    <button id="btnTortaGlobalSexo" type="button" class="btn btn-dark">Torta</button>
+                    <button id="btnPrueba" type="button" class="btn btn-danger">Gráfico de Prueba</button>
+                    <button id="btnBD" type="button" class="btn btn-info">Gráficos desde BD</button>
+                </div> *@
+            </div>
+
+            <!--Modal para gráficos-->
+            <div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" style="background-color: #F2E9E4;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               
+                        </div>
+                        <div class="modal-body">
+                            <!--En este container se muestran los gráficos-->
+                            <div id="contenedor-modal" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

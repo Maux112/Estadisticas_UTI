@@ -1,0 +1,122 @@
+﻿@* Eca se referencia para validar el ususario *@
+@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] UTI</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Frontend_PlanCommerce.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" /> *@
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #004c46;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="margin-left:0px" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/LOGOUTI.png" width="70" height="70" alt="">
+                    @* <img src="~/images/PlanCommerceBaner_v2.png" width="180" height="30" alt=""> *@
+                </a>
+                <a class="navbar-brand textHeader">
+                    <a class="navbar-brand textHeader" style="margin-left:5px; color:#F2E9E4; font-family:sans-serif" asp-area="" asp-controller="" asp-action="">
+                        UNIDAD DE TERAPIA INTENSIVA
+                    </a>
+                </a>
+                <span>
+                    <a class="navbar-brand" style="margin-left:5px" asp-area="" asp-controller="" asp-action="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#F2E9E4" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+
+                    </a>
+                    <a class="navbar-brand textHeader" style="margin-left:5px; color:#F2E9E4; font-family:sans-serif" asp-area="" asp-controller="" asp-action="">
+                        Yanizeth Nira Guzmán Ramos
+                    </a>
+                    <a class="navbar-brand" id="cerrarSesionIcono" style="margin-left:5px; margin-right:0px" asp-controller="Login" asp-action="CerrarSession">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#F2E9E4" class="bi bi-door-closed-fill" viewBox="0 0 16 16">
+                            <path d="M12 1a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2a1 1 0 0 1 1-1h8zm-2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+        <div class="row">
+
+            @Html.Partial("~/Views/Shared/_Sidebar.cshtml")
+
+            <div style="width:80%;background-color: #F2F2F2;">
+                <div class="contenido-body">
+                    <main role="main" class="content">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="border-top footer text-center">
+        <div class="container-fluid">
+            &copy; 2024 - Unidad de Terapia Intensva - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @* Para los sweet alert*@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    @* Esto es para los data tables *@
+    <!-- datatables JS -->
+    <script type="text/javascript" src="~/DataTablesTemplate/datatables.min.js"></script>
+
+    <!-- para usar botones en datatables JS -->
+    <script src="~/DataTablesTemplate/Buttons-2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="~/DataTablesTemplate/JSZip-3.10.1/jszip.min.js"></script>
+    <script src="~/DataTablesTemplate/pdfmake-0.2.7/pdfmake.min.js"></script>
+    <script src="~/DataTablesTemplate/pdfmake-0.2.7/vfs_fonts.js"></script>
+    <script src="~/DataTablesTemplate/Buttons-2.4.2/js/buttons.html5.min.js"></script>
+
+
+    <!-- Highcharts JS -->
+    <script src="~/pluggins/Highcharts_7.0.3/code/highcharts.js"></script>
+    <script src="~/pluggins/Highcharts_7.0.3/code/modules/exporting.js"></script>
+    <script src="~/pluggins/Highcharts_7.0.3/code/modules/export-data.js"></script>
+    <script src="~/pluggins/Highcharts_7.0.3/code/modules/drilldown.js"></script>
+
+
+    <script src="~/popper/popper.min.js"></script>
+   
+
+    <!-- código JS propìo-->
+    <script type="text/javascript" src="~/DataTablesTemplate/DataTableGestionIngresos.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_Ingresos.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_Sexo.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_Edad.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_Estancia.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_OrigenIngreso.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_CausaIngreso.js"></script>
+
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_SubCausaIngresoCardio.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_SubCausaIngresoGastro.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_SubCausaIngresoNeuro.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_SubCausaIngresoResp.js"></script>
+
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_ServicioEgreso.js"></script>
+    <script type="text/javascript" src="~/DataTablesTemplate/Tabla_CausaMuerte.js"></script>
+
+    <script type="text/javascript" src="~/js/Graficos/graficos.js"></script>
+    <script type="text/javascript" src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

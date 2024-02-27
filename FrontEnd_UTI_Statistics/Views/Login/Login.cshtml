@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <title>Login</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<body>
+    <section class="vh-100" style="background-image: url('/images/fondoLogin.jpg');background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem; background-color: rgba(242, 233, 228, 0.5);">
+                        <div class="card-body p-5 text-center">
+
+                            <img src="~/images/logo_CNS.png" width="100" height="185" alt="">
+                            <h2 class="mb-2 titleWelcome">Bienvenido/a</h2>
+                            <form>
+                                @* Para el usuario *@
+                                <div class="mb-3">
+                                    <input type="text" class="form-control inputText" id="loginUsuario" minlength="5" maxlength="20" placeholder="Usuario" required>
+                                </div>
+                                @* Para la contraseña *@
+                                <div class="mb-3">
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control inputText" id="loginClave" minlength="5" maxlength="20" placeholder="Contraseña" required>
+                                        <button class="btn" style="background-color:#025159;" type="button" id="muestraClave">
+                                            <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F2E9E4" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                                @* Boton de enviar *@
+                                <button type="submit" class="btn btnIngresa">Ingresar</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @* Referencias *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/popper/popper.min.js"></script> *@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @* Para los sweet alert*@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- código JS propìo para Inicio de Sesion-->
+    <script src="~/js/InicioSesionJs/Login.js"></script>
+</body>
+</html>
+<style>
+    .titleWelcome {
+        color: #004c46;
+        font-family: sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .inputText {
+        color: #004c46 !important;
+        font-family: sans-serif !important;
+    }
+
+    .btnIngresa {
+        background-color: #004c46;
+        color: #F2E9E4;
+        font-family: sans-serif !important;
+    }
+</style>
+

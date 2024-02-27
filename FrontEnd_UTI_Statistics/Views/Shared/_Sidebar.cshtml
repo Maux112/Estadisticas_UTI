@@ -1,0 +1,115 @@
+﻿<div class="main-menu">
+    <ul>
+
+
+        <li class="option text-link medium">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clipboard-plus-fill" viewBox="0 0 16 16">
+                <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm4.5 6V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5a.5.5 0 0 1 1 0" />
+            </svg>
+            <a asp-area="" asp-controller="Registro" asp-action="ListaRegistros" method="Post" class="text-link submenu medium" style="text-decoration: none !important;">
+                <span>Registros</span>
+            </a>
+        </li>
+
+
+
+        <li class="option text-link medium;">
+            <a asp-area="" asp-controller="GestionUsuario" asp-action="ListaUsuarios" method="Post" class="text-link submenu medium" style="text-decoration: none !important;" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                    <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z" />
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                </svg>
+                <span>Estadísticas</span>
+            </a>
+
+            <div class="collapse" id="collapseExample" style="margin: 10px;">
+                <div style="padding: 0px 10px 10px 10px;">
+                    <a asp-area="" asp-controller="Graficos" asp-action="Index" method="Post" class="text-link submenu medium" style="text-decoration: none !important;">
+                        <span>Datos UTI</span>
+                    </a>
+                </div>
+               @*  <div style="padding: 0px 10px 10px 10px;">
+                    <a asp-area="" asp-controller="GestionPerfil" asp-action="CambioClavePerfil" method="Post" class="text-link submenu medium" style="text-decoration: none !important;">
+                        <span>Cambio de Clave</span>
+                    </a>
+                </div> *@
+            </div>
+
+        </li>
+
+      
+        
+
+    </ul>
+
+</div>
+
+<style>
+    /* Esto es para el sidebar */
+    .main-menu {
+        background-color: #F2E9E4;
+        width: 20% !important;
+        padding: 10px 40px 15px 0px;
+        display: block;
+        min-height: 100vh;
+        z-index: 5;
+    }
+        /* Esto es para lo que se pinta cuando pasas el mouse */
+        .main-menu ul li {
+            margin: 5px 0px 5px 0px;
+            padding: 10px;
+            list-style: none;
+        }
+
+            .main-menu ul li:hover {
+                background-color: #659AA6;
+                border-radius: 10px;
+                list-style: none;
+                cursor: pointer;
+            }
+
+
+
+    /* Esto es para el texto del menu */
+    .text-link {
+        font-size: 17px !important;
+        color: #025159;
+        font-weight: 400;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+        /* Este es el estilo es para la imagen */
+        .text-link > svg {
+            fill: #025159;
+            width: 20px;
+            height: 20px;
+        }
+        /* Este estilo es para cuando pasa el mouse sobre la imagen */
+        .text-link:hover, .text-link:hover > svg {
+            color: #F2F2F2;
+            fill: #F2F2F2;
+        }
+
+    .submenu-activate {
+        display: none;
+        margin-left: 15px;
+    }
+
+        .submenu-activate li {
+            padding: 5px !important;
+        }
+
+            .submenu-activate li a {
+                color: #49D3F2;
+                font-size: 14px !important;
+                font-weight: 400;
+            }
+
+                .submenu-activate li a svg {
+                    display: none;
+                }
+
+</style>
+

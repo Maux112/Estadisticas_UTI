@@ -1,0 +1,2922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZyw97fHycEi9YrLwP+6Y/AAAAAACAAAAAAAQZgAAAAEAACAAAABTOswuNzDPtpwliZSCz0HU+jmWfSnAjpczrx8EIhVUzQAAAAAOgAAAAAIAACAAAAB+oEtstVISy6ivP03Ko/OPvble5JWlJTyp+04hAKXKyCAAAAD/0LiX59NtXbG0egJ05qZFNbqUNS0QhyRfsqW8U9bGlkAAAACkbxduC8xWJPDhwsSGy5yILw/E+Mr6I0mBFq5e7EhJVPcDb1/tsQPjyIHF27hjUIwbLT0udhBDHUkHTubPZCBu</EncryptedPassword>
+    <_PublishTargetUrl>ftp://198.37.116.42/www.estutisystem.somee.com</_PublishTargetUrl>
+    <History>True|2024-02-16T22:51:23.4731370Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="af/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="ar/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="az/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="Azure.Core.dll">
+      <publishTime>09/07/2023 13:50:30</publishTime>
+    </File>
+    <File Include="Azure.Identity.dll">
+      <publishTime>10/18/2023 15:59:42</publishTime>
+    </File>
+    <File Include="bg/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="bn-BD/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="cs/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="da/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="de/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>08/03/2023 10:04:40</publishTime>
+    </File>
+    <File Include="el/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="es/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="fa/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:04</publishTime>
+    </File>
+    <File Include="fi-FI/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="fr-BE/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="fr/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="FrontEnd_UTI_Statistics.deps.json">
+      <publishTime>02/16/2024 18:07:39</publishTime>
+    </File>
+    <File Include="FrontEnd_UTI_Statistics.dll">
+      <publishTime>02/16/2024 18:07:39</publishTime>
+    </File>
+    <File Include="FrontEnd_UTI_Statistics.exe">
+      <publishTime>02/16/2024 18:07:39</publishTime>
+    </File>
+    <File Include="FrontEnd_UTI_Statistics.pdb">
+      <publishTime>02/16/2024 18:07:39</publishTime>
+    </File>
+    <File Include="FrontEnd_UTI_Statistics.runtimeconfig.json">
+      <publishTime>02/11/2024 02:30:08</publishTime>
+    </File>
+    <File Include="he/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="hr/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="hu/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="Humanizer.dll">
+      <publishTime>01/29/2022 11:04:04</publishTime>
+    </File>
+    <File Include="hy/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="id/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="is/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="it/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="ja/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:04</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="ko-KR/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="ku/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="lv/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="MessagePack.Annotations.dll">
+      <publishTime>07/01/2020 09:05:20</publishTime>
+    </File>
+    <File Include="MessagePack.dll">
+      <publishTime>07/01/2020 09:05:38</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>10/26/2021 17:51:08</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>10/19/2020 14:47:56</publishTime>
+    </File>
+    <File Include="Microsoft.Build.dll">
+      <publishTime>09/12/2022 19:29:46</publishTime>
+    </File>
+    <File Include="Microsoft.Build.Framework.dll">
+      <publishTime>09/12/2022 19:28:56</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.AnalyzerUtilities.dll">
+      <publishTime>06/05/2020 23:37:20</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Features.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Features.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>10/26/2021 17:51:14</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>10/14/2021 14:38:16</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>01/26/2024 22:49:44</publishTime>
+    </File>
+    <File Include="Microsoft.DiaSymReader.dll">
+      <publishTime>06/11/2018 06:53:22</publishTime>
+    </File>
+    <File Include="Microsoft.DotNet.Scaffolding.Shared.dll">
+      <publishTime>08/03/2023 10:04:30</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>09/05/2023 14:25:28</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.Extensions.Msal.dll">
+      <publishTime>09/05/2023 14:31:58</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Abstractions.dll">
+      <publishTime>12/01/2023 00:56:56</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>12/01/2023 00:34:00</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>12/01/2023 00:35:22</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>12/01/2023 00:37:28</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>12/01/2023 00:48:08</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>12/01/2023 00:41:50</publishTime>
+    </File>
+    <File Include="Microsoft.NET.StringTools.dll">
+      <publishTime>09/12/2022 19:28:58</publishTime>
+    </File>
+    <File Include="Microsoft.SqlServer.Server.dll">
+      <publishTime>01/27/2022 13:19:08</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Debugger.Contracts.dll">
+      <publishTime>10/12/2021 18:56:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>08/03/2023 10:04:34</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>08/03/2023 10:04:38</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>08/03/2023 10:04:36</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>08/03/2023 10:04:34</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>08/03/2023 10:04:32</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>08/03/2023 10:04:38</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>10/22/2021 19:40:24</publishTime>
+    </File>
+    <File Include="ms-MY/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="mt/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="nb-NO/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="nb/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 16:03:36</publishTime>
+    </File>
+    <File Include="nl/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="NuGet.Common.dll">
+      <publishTime>05/30/2023 14:50:56</publishTime>
+    </File>
+    <File Include="NuGet.Configuration.dll">
+      <publishTime>05/30/2023 14:50:56</publishTime>
+    </File>
+    <File Include="NuGet.DependencyResolver.Core.dll">
+      <publishTime>05/30/2023 14:51:06</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>05/30/2023 14:51:14</publishTime>
+    </File>
+    <File Include="NuGet.LibraryModel.dll">
+      <publishTime>05/30/2023 14:50:56</publishTime>
+    </File>
+    <File Include="NuGet.Packaging.dll">
+      <publishTime>05/30/2023 14:51:06</publishTime>
+    </File>
+    <File Include="NuGet.ProjectModel.dll">
+      <publishTime>05/30/2023 14:51:06</publishTime>
+    </File>
+    <File Include="NuGet.Protocol.dll">
+      <publishTime>05/30/2023 14:51:14</publishTime>
+    </File>
+    <File Include="NuGet.Versioning.dll">
+      <publishTime>05/30/2023 14:55:08</publishTime>
+    </File>
+    <File Include="pl/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="pt/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="ro/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="ru/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll">
+      <publishTime>01/26/2024 22:49:42</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/net6.0/System.Drawing.Common.dll">
+      <publishTime>10/22/2021 19:51:42</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/11/2023 14:56:28</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/11/2023 14:56:28</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/11/2023 14:56:18</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/11/2023 14:56:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll">
+      <publishTime>01/26/2024 22:49:42</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>10/22/2021 19:40:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Drawing.Common.dll">
+      <publishTime>10/22/2021 19:48:10</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Runtime.Caching.dll">
+      <publishTime>10/22/2021 19:52:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>10/22/2021 19:51:04</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Windows.Extensions.dll">
+      <publishTime>10/22/2021 19:49:58</publishTime>
+    </File>
+    <File Include="sk/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="sl/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:06</publishTime>
+    </File>
+    <File Include="sr-Latn/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="sr/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="sv/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:08</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>11/05/2016 00:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>11/05/2016 00:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>11/05/2016 00:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>11/05/2016 00:55:44</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>11/05/2016 00:55:46</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>08/19/2022 15:58:02</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>02/15/2023 20:32:04</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>10/22/2021 19:49:12</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>12/01/2023 00:31:48</publishTime>
+    </File>
+    <File Include="System.Memory.Data.dll">
+      <publishTime>04/08/2021 12:45:54</publishTime>
+    </File>
+    <File Include="System.Reflection.MetadataLoadContext.dll">
+      <publishTime>10/22/2021 19:49:10</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>10/22/2021 19:52:02</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>10/22/2021 19:51:04</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>10/22/2021 19:49:50</publishTime>
+    </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>10/22/2021 19:49:44</publishTime>
+    </File>
+    <File Include="th-TH/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="tr/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="uk/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:10</publishTime>
+    </File>
+    <File Include="uz-Cyrl-UZ/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="uz-Latn-UZ/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="vi/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>02/16/2024 18:07:55</publishTime>
+    </File>
+    <File Include="wwwroot/css/sidebar.css">
+      <publishTime>02/12/2024 01:19:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>02/12/2024 01:08:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap.css">
+      <publishTime>08/31/2023 16:39:10</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap4.css">
+      <publishTime>08/31/2023 16:39:10</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap4.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap5.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bootstrap5.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bulma.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.bulma.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.dataTables.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.dataTables.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.foundation.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.foundation.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.jqueryui.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.jqueryui.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.semanticui.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/buttons.semanticui.min.css">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/common.scss">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/css/mixins.scss">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap4.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap4.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap5.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bootstrap5.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bulma.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.bulma.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.colVis.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.colVis.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.dataTables.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.dataTables.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.foundation.js">
+      <publishTime>08/31/2023 16:39:12</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.foundation.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.html5.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.html5.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.jqueryui.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.jqueryui.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.print.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.print.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.semanticui.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/buttons.semanticui.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/dataTables.buttons.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Buttons-2.4.2/js/dataTables.buttons.min.js">
+      <publishTime>08/31/2023 16:39:14</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTableGestionIngresos.js">
+      <publishTime>02/11/2024 16:53:39</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap4.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap4.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap5.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap5.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bulma.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bulma.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.dataTables.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.dataTables.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.foundation.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.foundation.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.jqueryui.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.jqueryui.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.semanticui.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/dataTables.semanticui.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/jquery.dataTables.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/css/jquery.dataTables.min.css">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/images/sort_asc.png">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/images/sort_asc_disabled.png">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/images/sort_both.png">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/images/sort_desc.png">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/images/sort_desc_disabled.png">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap4.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap4.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap5.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bootstrap5.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bulma.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.bulma.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.dataTables.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.dataTables.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.foundation.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.foundation.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.jqueryui.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.jqueryui.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.semanticui.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/dataTables.semanticui.min.js">
+      <publishTime>11/03/2023 14:34:56</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/jquery.dataTables.js">
+      <publishTime>11/03/2023 14:34:58</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/DataTables-1.13.7/js/jquery.dataTables.min.js">
+      <publishTime>11/03/2023 14:34:58</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/datatables.css">
+      <publishTime>11/05/2023 14:41:46</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/datatables.js">
+      <publishTime>11/05/2023 14:41:46</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/datatables.min.css">
+      <publishTime>11/05/2023 14:41:46</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/datatables.min.js">
+      <publishTime>11/05/2023 14:41:46</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/JSZip-3.10.1/jszip.js">
+      <publishTime>07/06/2023 20:32:32</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/JSZip-3.10.1/jszip.min.js">
+      <publishTime>07/06/2023 20:32:32</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/pdfmake-0.2.7/pdfmake.js">
+      <publishTime>05/01/2023 16:17:58</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/pdfmake-0.2.7/pdfmake.min.js">
+      <publishTime>05/01/2023 16:17:58</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/pdfmake-0.2.7/vfs_fonts.js">
+      <publishTime>05/01/2023 16:17:58</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_CausaIngreso.js">
+      <publishTime>02/11/2024 03:00:04</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_CausaMuerte.js">
+      <publishTime>02/11/2024 03:18:57</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_Edad.js">
+      <publishTime>02/11/2024 16:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_Estancia.js">
+      <publishTime>02/11/2024 16:21:30</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_Ingresos.js">
+      <publishTime>02/11/2024 02:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_OrigenIngreso.js">
+      <publishTime>02/11/2024 02:57:53</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_ServicioEgreso.js">
+      <publishTime>02/11/2024 03:16:38</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_Sexo.js">
+      <publishTime>02/11/2024 02:47:50</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_SubCausaIngresoCardio.js">
+      <publishTime>02/11/2024 03:11:35</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_SubCausaIngresoGastro.js">
+      <publishTime>02/11/2024 03:08:00</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_SubCausaIngresoNeuro.js">
+      <publishTime>02/11/2024 03:06:18</publishTime>
+    </File>
+    <File Include="wwwroot/DataTablesTemplate/Tabla_SubCausaIngresoResp.js">
+      <publishTime>02/11/2024 03:12:10</publishTime>
+    </File>
+    <File Include="wwwroot/FrontEnd_UTI_Statistics.styles.css">
+      <publishTime>02/11/2024 02:30:08</publishTime>
+    </File>
+    <File Include="wwwroot/images/favicon.ico">
+      <publishTime>02/11/2024 16:23:36</publishTime>
+    </File>
+    <File Include="wwwroot/images/fondoLogin.jpg">
+      <publishTime>02/11/2024 15:03:02</publishTime>
+    </File>
+    <File Include="wwwroot/images/LOGOUTI.png">
+      <publishTime>02/11/2024 15:17:56</publishTime>
+    </File>
+    <File Include="wwwroot/images/logo_CNS.png">
+      <publishTime>02/11/2024 14:55:51</publishTime>
+    </File>
+    <File Include="wwwroot/js/Graficos/graficos.js">
+      <publishTime>02/16/2024 17:44:26</publishTime>
+    </File>
+    <File Include="wwwroot/js/InicioSesionJs/Login.js">
+      <publishTime>02/11/2024 16:53:06</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>02/05/2024 19:26:48</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/annotations/popup.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/annotations/popup.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/highcharts.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/highcharts.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/stocktools/gui.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/stocktools/gui.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/dark-unica.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/dark-unica.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/grid-light.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/grid-light.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/sand-signika.css">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/css/themes/sand-signika.scss">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/annotations.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/ControllableCircle.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/ControllableImage.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/ControllableLabel.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/controllableMixin.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/ControllablePath.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/ControllableRect.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/controllable/markerMixin.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/ControlPoint.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/eventEmitterMixin.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/MockPoint.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/navigationBindings.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/popup.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/CrookedLine.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/ElliottWave.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/Fibonacci.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/InfinityLine.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/Measure.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/Pitchfork.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/Tunnel.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/annotations/types/VerticalLine.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/error-messages.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/error.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/highcharts-3d.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/highcharts-more.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/highcharts.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/accessibility.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/annotations-advanced.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/annotations.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/arrow-symbols.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/boost-canvas.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/boost.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/broken-axis.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/bullet.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/current-date-indicator.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/cylinder.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/data.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/datagrouping.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/debugger.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/dependency-wheel.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/drag-panes.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/draggable-points.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/drilldown.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/export-data.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/exporting.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/full-screen.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/funnel.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/gantt.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/grid-axis.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/heatmap.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/histogram-bellcurve.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/item-series.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/networkgraph.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/no-data-to-display.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/offline-exporting.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/oldie-polyfills.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/oldie.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/overlapping-datalabels.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/parallel-coordinates.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/pareto.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/pathfinder.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/pattern-fill.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/price-indicator.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/sankey.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/series-label.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/solid-gauge.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/sonification.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/static-scale.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/stock-tools.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/stock.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/streamgraph.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/sunburst.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/tilemap.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/timeline.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/treegrid.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/treemap.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/variable-pie.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/variwide.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/vector.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/venn.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/windbarb.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/wordcloud.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/modules/xrange.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/avocado.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/avocado.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/dark-blue.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/dark-green.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/dark-unica.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/gray.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/grid-light.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/grid.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/sand-signika.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/skies.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/sunset.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/masters/themes/sunset.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/ajax.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/centered-series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/derived-series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/download-url.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/draw-point.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/geometry-circles.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/geometry.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/indicator-required.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/multipe-lines.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/navigation.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/nodes.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/on-series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/polygon.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/reduce-array.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/mixins/tree-series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/a11y-i18n.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/annotations-legacy.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/bellcurve.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/boost-canvas.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/boost.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/broken-axis.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/bullet.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/cylinder.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/data.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/debugger.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/dependency-wheel.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/drag-panes.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/draggable-points.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/drilldown.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/export-data.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/exporting.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/full-screen.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/funnel.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/histogram.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/item-series.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/keyboard-navigation.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/networkgraph/layouts.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/networkgraph/networkgraph.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/networkgraph/QuadTree.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/no-data-to-display.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/offline-exporting.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/oldie-polyfills.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/oldie.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/overlapping-datalabels.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/parallel-coordinates.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/pareto.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/pattern-fill.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/price-indicator.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sankey.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/screen-reader.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/series-label.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/solid-gauge.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/chartSonify.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/Earcon.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/Instrument.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/instrumentDefinitions.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/musicalFrequencies.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/pointSonify.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/sonification.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/Timeline.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sonification/utilities.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/static-scale.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/stock-tools-bindings.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/stock-tools-gui.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/streamgraph.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/sunburst.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/tilemap.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/timeline.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/treemap.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/variable-pie.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/variwide.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/vector.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/venn.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/windbarb.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/wordcloud.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/modules/xrange.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Axis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Chart.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Column.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Math.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Pie.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Scatter.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/Series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/SVGRenderer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-3d/VMLRenderer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/ArrowSymbols.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/CurrentDateIndicator.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/GanttChart.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/GanttSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/GridAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/Pathfinder.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/PathfinderAlgorithms.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/Tree.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-gantt/TreeGrid.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/ColorAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/ColorSeriesMixin.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/GeoJSON.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/HeatmapSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/Map.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapBubbleSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapLineSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapNavigation.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapPointer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapPointSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-map/MapSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/AreaRangeSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/AreaSplineRangeSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/BoxPlotSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/BubbleLegend.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/BubbleSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/ColumnPyramidSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/ColumnRangeSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/ErrorBarSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/GaugeSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/PackedBubbleSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/Pane.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/Polar.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/PolygonSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/RadialAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts-more/WaterfallSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/AreaSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/AreaSplineSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Axis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/BarSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/CandlestickSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Chart.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Color.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/ColumnSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/DataGrouping.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/DataLabels.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/DateTimeAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Dynamics.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/FlagsSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Globals.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Html.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Interaction.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Legend.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/LogarithmicAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/MSPointer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Navigator.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/OHLCSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Options.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/OrdinalAxis.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/PieSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/PlotBandSeries.experimental.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/PlotLineOrBand.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Point.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Pointer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/RangeSelector.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Responsive.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/ScatterSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/ScrollablePlotArea.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Scrollbar.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Series.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/SplineSeries.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Stacking.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/StockChart.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/SvgRenderer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Tick.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Time.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Tooltip.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/TouchPointer.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/parts/Utilities.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/avocado.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/dark-blue.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/dark-green.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/dark-unica.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/gray.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/grid-light.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/grid.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/sand-signika.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/skies.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/es-modules/themes/sunset.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-3d.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-3d.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-3d.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-more.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-more.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts-more.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/highcharts.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/canvg.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/canvg.src.js">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/jspdf.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/jspdf.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/rgbcolor.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/rgbcolor.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/svg2pdf.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/lib/svg2pdf.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/accessibility.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/accessibility.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/accessibility.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations-advanced.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations-advanced.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations-advanced.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/annotations.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/arrow-symbols.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/arrow-symbols.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/arrow-symbols.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost-canvas.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost-canvas.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost-canvas.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/boost.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/broken-axis.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/broken-axis.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/broken-axis.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/bullet.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/bullet.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/bullet.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/current-date-indicator.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/current-date-indicator.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/current-date-indicator.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/cylinder.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/cylinder.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/cylinder.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/data.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/data.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/data.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/datagrouping.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/datagrouping.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/datagrouping.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/debugger.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/debugger.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/debugger.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/dependency-wheel.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/dependency-wheel.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/dependency-wheel.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drag-panes.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drag-panes.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drag-panes.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/draggable-points.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/draggable-points.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/draggable-points.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drilldown.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drilldown.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/drilldown.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/export-data.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/export-data.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/export-data.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/exporting.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/exporting.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/exporting.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/full-screen.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/full-screen.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/full-screen.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/funnel.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/funnel.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/funnel.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/gantt.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/gantt.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/gantt.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/grid-axis.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/grid-axis.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/grid-axis.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/heatmap.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/heatmap.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/heatmap.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/histogram-bellcurve.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/histogram-bellcurve.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/histogram-bellcurve.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/item-series.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/item-series.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/item-series.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/networkgraph.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/networkgraph.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/networkgraph.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/no-data-to-display.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/no-data-to-display.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/no-data-to-display.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/offline-exporting.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/offline-exporting.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/offline-exporting.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie-polyfills.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie-polyfills.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie-polyfills.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/oldie.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/overlapping-datalabels.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/overlapping-datalabels.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/overlapping-datalabels.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/parallel-coordinates.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/parallel-coordinates.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/parallel-coordinates.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pareto.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pareto.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pareto.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pathfinder.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pathfinder.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pathfinder.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pattern-fill.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pattern-fill.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/pattern-fill.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/price-indicator.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/price-indicator.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/price-indicator.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sankey.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sankey.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sankey.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/series-label.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/series-label.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/series-label.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/solid-gauge.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/solid-gauge.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/solid-gauge.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sonification.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sonification.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sonification.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/static-scale.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/static-scale.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/static-scale.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock-tools.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock-tools.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock-tools.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/stock.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/streamgraph.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/streamgraph.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/streamgraph.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sunburst.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sunburst.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/sunburst.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/tilemap.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/tilemap.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/tilemap.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/timeline.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/timeline.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/timeline.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treegrid.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treegrid.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treegrid.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treemap.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treemap.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/treemap.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variable-pie.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variable-pie.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variable-pie.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variwide.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variwide.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/variwide.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/vector.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/vector.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/vector.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/venn.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/venn.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/venn.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/windbarb.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/windbarb.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/windbarb.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/wordcloud.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/wordcloud.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/wordcloud.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/xrange.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/xrange.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/modules/xrange.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/avocado.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/avocado.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/avocado.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-blue.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-blue.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-blue.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-green.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-green.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-green.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-unica.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-unica.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/dark-unica.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/gray.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/gray.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/gray.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid-light.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid-light.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid-light.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/grid.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sand-signika.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sand-signika.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sand-signika.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/skies.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/skies.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/skies.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sunset.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sunset.js.map">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/code/themes/sunset.src.js">
+      <publishTime>02/06/2019 09:39:44</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/annotations-hidden.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/annotations-visible.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-bottom.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-left.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-line.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-ray.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-right.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow-segment.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/arrow.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/circle.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/close.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/crooked-3.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/crooked-5.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/current-price-hide.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/current-price-show.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/destroy.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/edit.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/elliott-3.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/elliott-5.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/fibonacci.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/flag-basic.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/flag-diamond.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/flag-elipse.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/flag-trapeze.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/fullscreen.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/horizontal-line.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/indicators.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/label.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/line.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/measure-x.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/measure-xy.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/measure-y.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/parallel-channel.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/pitchfork.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/ray.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/rectangle.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/remove-annotations.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/save-chart.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/segment.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/separator.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/series-candlestick.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/series-line.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/series-ohlc.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/text.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/vertical-arrow.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/vertical-counter.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/vertical-double-arrow.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/vertical-label.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/vertical-line.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/zoom-x.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/zoom-xy.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/stock-icons/zoom-y.svg">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/gfx/vml-radial-gradient.png">
+      <publishTime>02/06/2019 09:38:34</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/color-picker.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/cursor.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/earth.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/feature.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-circle.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-circlepin.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-diamondpin.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-flag.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-rectangle.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag-squarepin.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/flag.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/rect.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/reset.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/save-chart-cloud.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/save.svg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/search.png">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/skies.jpg">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/snow.png">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/pluggins/Highcharts_7.0.3/graphics/sun.png">
+      <publishTime>02/06/2019 09:38:36</publishTime>
+    </File>
+    <File Include="wwwroot/popper/popper.min.js">
+      <publishTime>10/03/2018 19:48:11</publishTime>
+    </File>
+    <File Include="zh-CN/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="zh-Hans/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:12</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+    <File Include="zh-Hant/Humanizer.resources.dll">
+      <publishTime>01/29/2022 11:04:14</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
+      <publishTime>10/14/2021 14:43:18</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>10/14/2021 14:42:34</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:42:40</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll">
+      <publishTime>10/14/2021 14:42:54</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>10/14/2021 14:30:42</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll">
+      <publishTime>10/14/2021 14:38:10</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>10/14/2021 14:38:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

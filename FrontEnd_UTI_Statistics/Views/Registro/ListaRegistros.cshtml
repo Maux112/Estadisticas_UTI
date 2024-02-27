@@ -1,0 +1,300 @@
+﻿@model FrontEnd_UTI_Statistics.Models.Registro.ListaRegistroResponseBd
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="~/DataTablesTemplate/datatables.min.css" />
+    <!--datables estilo bootstrap 5 CSS-->
+    <link rel="stylesheet" type="text/css" href="~/DataTablesTemplate/DataTables-1.13.7/css/dataTables.bootstrap5.min.css">
+
+    <!--font awesome con CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="col-xs-12">
+        <h1 style="color:#013440; font-family:sans-serif;">
+            Gestor de Ingresos
+        </h1>
+        <h6 style="color:#839192;font-family:sans-serif;">
+            Agrega Ingresos de UTI.
+        </h6>
+    </div>
+
+
+    <!--Ejemplo tabla con DataTables-->
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Button trigger modal -->
+                <button data-bs-toggle="modal" data-bs-target="#modalRegistrarUsuario" class="btn" style="background-color:#025159;margin: 5px 0px 5px 0px;" type="button" id="agregarUsuario" title="Agregar Usuario">
+                    <span style="color:#F2F2F2;font-family:sans-serif;">
+                        Agregar Registro
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2F2F2" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                        </svg>
+                    </span>
+                </button>
+                <br>
+                <div class="table-responsive">
+                    <table id="tablaGestionIngresos" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>GENERO</th>
+                                <th>EDAD</th>
+                                <th>FECHA DE INGRESO</th>
+                                <th>FECHA DE EGRESO</th>
+                                <th>DÍAS DE ESTANCIA</th>
+                                <th>ORIGEN DE INGRESO</th>
+                                <th>CAUSA DE INGRESO</th>
+                                <th>SUBCATEGORIAS DE ORIGEN DE INGRESO</th>
+                                <th>SERVICIO DE EGRESO</th>
+                                <th>CAUSA DE MORTALIDAD</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.lista_usuarios != null && Model.lista_usuarios.Any())
+                            {
+                                foreach (var item in Model.lista_usuarios)
+                                {
+                                    <tr>
+                                        @if (@item.Sexo == 0)
+                                        {
+                                            <td>MASCULINO</td>
+                                        }
+                                        else
+                                        {
+                                            <td>FEMENINO</td>
+                                        }
+
+                                        <td>@item.Edad</td>
+                                        <td>@DateTime.Parse(item.FechaIngreso).ToString("dd/MM/yyyy")</td>
+                                        <td>@DateTime.Parse(item.FechaEgreso).ToString("dd/MM/yyyy")</td>
+                                        <td>@item.EstanciaDias</td>
+                                        <td>@item.OrigenIngreso</td>
+                                        <td>@item.CausaIngreso</td>
+
+                                        @if (@item.SubCausaIngreso == "0")
+                                        {
+                                            <td>SIN SUBCATEGORIA</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.SubCausaIngreso</td>
+                                        }
+
+                                        <td>@item.ServicioEgreso</td>
+
+                                        @if (@item.CausaMortalidad == "0")
+                                        {
+                                            <td>SIN CAUSA DE MORTALIDAD</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.CausaMortalidad</td>
+                                        }
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="10">No hay datos disponibles.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    @*Para el modal *@
+
+
+    <!-- Modal Registrar Ingreso -->
+    <div class="modal fade" id="modalRegistrarUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#013440;">
+                    <h5 class="modal-title" style="color:#F2E9E4;" id="modalRegistrarUsuario">Registrar Nuevo</h5>
+                    <button type="button" style="background-color: #F2E9E4;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <div class="separadores">Datos Generales</div>
+                        </div>
+                        @* Sexo *@
+                        <label class="labelFormularios">Sexo</label>
+                        <div class="mb-3">
+
+                            <input  type="radio" id="masculino" name="sexo_ingreso" value="0" checked>
+                            <label class="labelFormularios"  for="masculino">Masculino</label><br>
+
+                            <input type="radio" id="femenino" name="sexo_ingreso" value="1">
+                            <label class="labelFormularios"  for="femenino">Femenino</label><br>
+                        </div>
+                        @* Edad *@
+                        <label class="labelFormularios">Edad</label>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="edad_ingreso" maxlength="20" placeholder="Edad" required>
+                        </div>
+                        @* Fecha de Ingreso *@
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span style=" width: 50%;" class="input-group-text">Fecha de Ingreso</span>
+                                <input style=" width: 50%;" class="btn btn-outline-primary" type="date" id="fechIngreso" min="2019-01-01" max="2023-12-31" />
+                            </div>
+                        </div>
+                        @* Fecha de Egreso *@
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span style=" width: 50%;" class="input-group-text">Fecha de Egreso</span>
+                                <input style=" width: 50%;" class="btn btn-outline-primary" type="date" id="fechEgreso" min="2019-01-01" max="2023-12-31" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="separadores">Datos de Ingreso</div>
+                        </div>
+                        @* Origen de ingreso *@
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span style=" width: 50%;" class="input-group-text">Origen de ingreso</span>
+                                <select class="form-select btn btn-outline-primary" id="origenIngreso">
+                                    <option selected value="0">SELECCIONA</option>
+                                    <option  value="1">EMERGENCIAS</option>
+                                    <option value="2">QUIRÓFANO</option>
+                                    <option value="3">SALA COMÚN</option>
+                                    <option value="4">TRANSFERENCIA DE OTRA UTI</option>
+                                    <option value="5">OTROS</option>
+                                </select>
+                            </div>
+                        </div>
+                        @* Causa de Ingreso *@
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span style="width: 50%;" class="input-group-text">Causa de Ingreso</span>
+                                <select class="form-select btn btn-outline-primary" id="causaIngreso">
+                                    <option value="0" selected>SELECCIONA</option>
+                                    <option value="1" >NEUROLÓGICO</option>
+                                    <option value="2">RESPIRATORIO</option>
+                                    <option value="3">CARDIOVASCULAR</option>
+                                    <option value="4">GASTROINTESTINAL</option>
+                                    <option value="5">RENAL-ENDOCRINOLÓGICO</option>
+                                    <option value="6">OTROS</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        @*Sub Categoria Causa de Ingreso *@
+                        <div class="mb-3" id="subCategoriaDiv" style="display: none;">
+                            <div class="input-group mb-3">
+                                <span style="width: 50%;" class="input-group-text">Subcategoria Causa de Ingreso</span>
+                                <select class="form-select btn btn-outline-primary" id="SubcausaIngreso">
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <div class="separadores">Datos de Egreso</div>
+                        </div>
+                        @* Servicio de Engreso *@
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span style="width: 50%;" class="input-group-text">Servicio de Egreso</span>
+                                <select class="form-select btn btn-outline-primary" id="servicioEngreso">
+                                    <option selected value="0">SELECCIONA</option>
+                                    <option value="1">SALA COMÚN</option>
+                                    <option value="2">TERAPIA INTERMEDIA</option>
+                                    <option value="3">ALTA HOSPITALARIA</option>
+                                    <option value="4">FALLECE</option>
+                                </select>
+                            </div>
+                        </div>
+                        @* Causa de mortalidad *@
+                        <div class="mb-3" id="causaMortalidadDiv" style="display: none;">
+                            <div class="input-group mb-3">
+                                <span style="width: 50%;" class="input-group-text">Causa de mortalidad</span>
+                                <select class="form-select btn btn-outline-primary" id="causaMortalidad">
+                                    <option selected value="0">SELECCIONA</option>
+                                    <option value="1">NEUROLÓGICO</option>
+                                    <option value="2">RESPIRATORIO</option>
+                                    <option value="3">CARDIOVASCULAR</option>
+                                    <option value="4">GASTROINTESTINAL</option>
+                                    <option value="5">RENAL-ENDOCRINOLÓGICO</option>
+                                    <option value="6">FALLA MULTIORGANICA</option>
+                                    <option value="7">OTROS</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn " id="btnInsertarRegistro" style="background-color:#025159;color:#F2F2F2;font-family:sans-serif;">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<style>
+    .labelFormularios {
+        font-family: sans-serif;
+        color: #025159;
+    }
+
+    .separadores {
+        background-color: #025159;
+        font-family: sans-serif;
+        color: #F2E9E4;
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        padding: 15px 15px 15px 15px !important;
+    }
+
+    /*estilos para la tabla*/
+    table th {
+        background-color: #013440 !important;
+        color: #F2E9E4;
+        font-family: sans-serif;
+    }
+
+    table > tbody > tr > td {
+        vertical-align: middle !important;
+        font-family: sans-serif;
+        color: #013440 !important
+    }
+
+    /*para alinear los botones y cuadro de busqueda*/
+    .btn-group, .btn-group-vertical {
+        position: absolute !important;
+    }
+</style>
+
